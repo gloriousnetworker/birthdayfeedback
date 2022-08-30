@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Glorious Birthday Feedback App</title>
+  </head>
+  <body>
+    <!-- Feedback Header -->
+    <div class="container">
+      <!-- <img src="images/rocket.jpg" class="rocket"> -->
+      <div class="launch__time">
+        <div>
+          <h6 id="days">00</h6>
+          <strong>Days</strong>
+        </div>
+
+        <div>
+          <h6 id="hours">00</h6>
+          <strong>Hrs</strong>
+        </div>
+
+        <div>
+          <h6 id="minutes">00</h6>
+          <strong>Mins</strong>
+        </div>
+
+        <div>
+          <h6 id="seconds">00</h6>
+          <strong>Secs</strong>
+        </div>
+      </div>
+
+      <div class="feedback__header" id="feedback-header">
+        <div class="left__header">
+          <h3><span id="feedbacks"> My Birthday</span> Feedbacks</h3>
+        </div>
+
+        <!-- Feedback Right-Header -->
+        <div class="right__header">
+          <button class="gifting__button" id="add-gifting-button">
+            🤲🏽 Gifting
+          </button>
+          <button class="feedback__button" id="add-feedback-button">
+            🖊️ Add Feedback
+          </button>
+        </div>
+      </div>
+
+      <!-- Feedback List -->
+      <div class="feedback__list" id="feedback-list"></div>
+
+      <!-- Adding a modal to add feedback -->
+      <div class="modal" id="add-feedback-modal">
+        <div class="modal__content">
+          <div class="modal__header-left">
+            <h1>Add Feedbacks & Wishes for your boy!</h1>
+          </div>
+
+          <div class="modal__body">
+            <form id="add-feedback-form" class="form">
+              <div class="form__group">
+                <label for="name"> Your Name</label>
+                <input type="text" name="name" id="name" class="form__input" />
+              </div>
+              <div class="form__group">
+                <label for="title">Feedback & Wish Title</label>
+                <input
+                  type="text"
+                  name="title"
+                  id="title"
+                  class="form__input"
+                />
+              </div>
+              <div class="form__group">
+                <label for="text">Feedback & Wish Detail</label>
+                <textarea name="text" id="text" class="form__input"></textarea>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal__footer">
+            <button class="modal__button feedback__button" id="add-button">
+              📝 Add feedback
+            </button>
+            <button
+              class="modal__button feedback__button modal__button_cancel"
+              id="cancel-button"
+            >
+              ❎ Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Adding Gifting section  -->
+
+      <div class="gifting__modal" id="add-gifting-modal">
+        <div class="gifting__content">
+          <div class="modal__header-left">
+            <h1>Account Name :</h1>
+            <label for="name"> Iniubong Uko Udofot </label>
+          </div>
+
+          <div class="modal__header-left">
+            <h1>Bank Name :</h1>
+            <label> United Bank For Africa (UBA) </label>
+          </div>
+
+          <div class="modal__header-left">
+            <h1>Account Number :</h1>
+            <label> 2066238173 </label>
+          </div>
+
+          <div class="modal__header-left">
+            <h1>Contact :</h1>
+            <label> +234 802-498-3733 </label>
+          </div>
+
+          <div class="modal__header-left">
+            <h1>Email :</h1>
+            <label> iniubongudofot2000@gmail.com </label>
+          </div>
+
+          <div class="modal__footer">
+            <button
+              class="modal__button feedback__button modal__button_cancel"
+              id="thank-you-button"
+            >
+              Thank You! ❤️
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Adding Appreciation Modal  -->
+
+      <div class="appreciation__modal" id="add-appreciation-modal">
+        <div class="modal__content">
+          <div class="modal__header-left">
+            <h2>Appreciation</h2>
+            <label
+              >Birthdays are one-day events, but your wishes will stay with me.
+              Thank you very much!</label
+            >
+          </div>
+
+          <div class="modal__footer">
+            <button
+              class="modal__button feedback__button modal__button_cancel"
+              id="appreciation-cancel-button"
+            >
+              ❎ Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- FeedBack Appreciation Modal  -->
+
+      <div
+        class="feedback__appreciation__modal"
+        id="add-feedback-appreciation-modal"
+      >
+        <div class="modal__content">
+          <div class="modal__header-left">
+            <h2>Appreciation</h2>
+            <label
+              >Birthdays are one-day events, but your wishes will stay with me.
+              Thank you very much fam!</label
+            >
+          </div>
+
+          <div class="modal__footer">
+            <button
+              class="modal__button feedback__button modal__button_cancel"
+              id="feedback-appreciation-cancel-button"
+            >
+              ❎ Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="/script.js"></script>
+  </body>
+</html>
